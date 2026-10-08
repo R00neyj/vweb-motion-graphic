@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>V WEB Motion 30s</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="short.css">
+</head>
+<body>
+<div id="stage">
+
+<!-- A 훅 -->
+<section id="a" class="scene">
+  <div class="gridbg"></div>
+  <div class="lk"><svg class="logo" viewBox="0 0 380 82"><g class="vb"><path fill="currentColor" d="M-1.55 0 L29.41 52.26 A1.97 1.97 0 0 0 30.07 52.94 A15.37 15.37 0 0 0 48.62 51.1 A4.8 4.8 0 0 0 49.48 45.14 L22.75 0 Z"/></g><g class="vl"><path style="fill:var(--logo-blue,#3235CD)" d="M35.43 59.76 Q34.93 58.9 35.85 59.32 A15.16 15.16 0 0 0 54.59 53.17 L84 4.7 A9.8 9.8 0 0 1 100.8 14.9 L62.94 77.24 A10.1 10.1 0 0 1 45.58 77.1 Z"/></g><g fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path class="ch" d="M121.4 3 L142.4 78 L167.5 42.1 L192.6 78 L213.6 3 L200.6 3 L187.6 49.4 L167.5 20.7 L147.4 49.4 L134.4 3 Z"/><path class="ch" d="M294 3 H238 A17 17 0 0 0 221 20 V60 A17 17 0 0 0 238 77 H294 V64 H237 A4 4 0 0 1 233 60 V43 H281 V30 H233 V19 A4 4 0 0 1 237 15.5 H294 Z"/><path class="ch" d="M306 3 H352 A19.5 19.5 0 0 1 368.5 32.8 A24 24 0 0 1 355.5 77 H306 Z M318 15.5 H352 A7 7 0 0 1 352 29.5 H318 Z M318 42.5 H355.5 A10.75 10.75 0 0 1 355.5 64 H318 Z" fill-rule="evenodd"/></g></svg></div>
+  <div class="q1"><span class="mask" data-split>문구 하나 바꾸는데</span></div>
+  <div class="q2"><span class="mask"><b data-split>며칠씩</b></span><span class="mask" data-split> 기다리셨나요?</span></div>
+  <div class="q3"><span class="mask" data-split>이제, </span><span class="mask hl"><span data-split>직접 고치세요.</span><i class="uline"></i></span></div>
+  <div class="q4">브이웹 홈페이지 <b>직접 수정 기능</b></div>
+</section>
+
+<!-- B 편집 데모 -->
+<section id="b" class="scene">
+  <div class="cap" id="cap"></div>
+  <div class="pills"><span class="pl">수정모드</span><span class="pl">글자</span><span class="pl">이미지</span><span class="pl">대표번호</span></div>
+  <div class="bw" id="edbw">
+    <div class="bar"><i></i><i></i><i></i><div class="url"><span class="lock">●</span>딩딩파파.com</div></div>
+    <div class="content">
+      <div class="zoom" id="edzoom">
+        <div class="site" id="edsite" style="height:3157px">
+          <img class="sec" src="../assets/sec_hero997.png" style="top:0">
+          <img class="sec" src="../assets/sec_margin.png" style="top:997px">
+          <img class="sec" src="../assets/sec_photos.png" style="top:2077px">
+          <div class="abs" style="left:600px;top:1089px;width:720px;height:126px;background:#fff"></div>
+          <div class="abs" id="t1" style="left:0;top:1099px;width:1920px;text-align:center;font:900 50px/1 SUIT;letter-spacing:-.055em;color:#000"><span id="t1txt">매출보단 마진율로 승부하는</span><span class="caret" id="caret1" style="opacity:0"></span></div>
+          <div class="abs" id="t2" style="left:0;top:1158px;width:1920px;text-align:center;font:900 50px/1 SUIT;letter-spacing:-.055em;color:#3674FF"><span id="w1" style="background:linear-gradient(#b8d0ff,#b8d0ff) no-repeat 0 0/0% 100%">알짜배기</span> 브랜드 딩딩파파!</div>
+          <div class="abs" id="swap1" style="left:264px;top:2417px;width:454px;height:344px;border-radius:40px 0 0 0;overflow:hidden;clip-path:circle(0% at 50% 50%)"><img src="../assets/slide1.png" style="width:100%;height:100%;object-fit:cover;object-position:50% 40%"></div>
+          <div id="edboxes"></div>
+          <div class="ed-toolbar" id="toolbar" style="left:520px;top:1150px;opacity:0">
+            <div class="b">B</div><div class="b" style="font-style:italic">I</div><div class="b" style="text-decoration:line-through">S</div><div class="sep"></div>
+            <div class="b">🎨</div><div class="in" id="tbin"><span class="ph">#000000</span></div><div class="sep"></div>
+            <div class="b">−</div><div class="b">+</div><div class="sep"></div><div class="b">⟲</div>
+          </div>
+        </div>
+        <div class="fixed">
+          <img src="../assets/fx_header.png" style="position:absolute;left:0;top:0;width:1920px">
+          <img src="../assets/fx_bar.png" style="position:absolute;left:0;top:997px;width:1920px">
+          <div class="abs" style="left:1644px;top:20px;width:170px;height:46px;background:#fff"></div>
+          <div class="abs tel" id="telh" style="left:1646px;top:21px;color:#153F9D">1666.9412</div><div class="abs tel" id="telhR" style="left:1646px;top:21px;color:#153F9D;opacity:0"></div>
+          <div class="abs" style="left:1521px;top:1017px;width:172px;height:46px;background:#001137"></div>
+          <div class="abs tel" id="telf" style="left:1523px;top:1018px;color:#FAE97A">1666.9412</div><div class="abs tel" id="telfR" style="left:1523px;top:1018px;color:#FAE97A;opacity:0"></div>
+          <div class="ed-tel" id="edtel" style="opacity:0">☎ 대표번호 일괄 수정</div>
+          <div class="ed-mode" id="edmode">수정모드 켜기<div class="on">수정모드 끄기</div></div>
+          <div class="ed-save" id="edsave" style="opacity:0">저장 (<span id="savecnt">1</span>)</div>
+          <div class="callout" id="coh" style="left:1460px;top:84px">헤더</div>
+          <div class="callout" id="cof" style="left:1250px;top:940px">하단 상담바</div>
+          <div class="callout" id="cob" style="left:1530px;top:320px;background:#fff;color:#0f7a3d;border:3px solid var(--green)">+ 본문 · 푸터 6곳</div>
+          <div class="toast" id="toast1">✓ <b>8곳</b>을 한 번에 바꿨습니다.</div>
+          <div class="modal" id="mimg"><div class="mbox" style="width:820px">
+            <div class="tt">이미지 변경</div>
+            <div style="display:flex;gap:26px">
+              <div style="position:relative;width:330px;height:250px;border-radius:14px;overflow:hidden;background:#222;flex:none">
+                <img src="../assets/photo1.png" style="position:absolute;width:100%;height:100%;object-fit:cover">
+                <img id="mprev2" src="../assets/slide1.png" style="position:absolute;width:100%;height:100%;object-fit:cover;opacity:0">
+              </div>
+              <div style="flex:1;font:600 21px/1.9 Pret;color:#4a4f5c">
+                <div>파일 <b style="color:#14161c">con12_img01.jpg</b></div>
+                <div>원본 크기 <b style="color:#14161c">908 × 688</b></div>
+                <div>화면 표시 크기 <b style="color:#14161c">454 × 344</b></div>
+                <div id="mok" style="opacity:0;color:#16a34a;font-weight:800">✓ 원본과 같은 크기</div>
+              </div>
+            </div>
+            <div id="drop" style="margin:24px 0 18px;height:96px;border:3px dashed #c9cdd8;border-radius:14px;display:flex;align-items:center;justify-content:center;font:700 22px Pret;color:#6b7280">새 이미지 파일 — 끌어다 놓기</div>
+            <div class="acts"><div class="btn">취소</div><div class="btn ok" id="mimgok">적용</div></div>
+          </div></div>
+          <div class="abs" id="filecard" style="left:2000px;top:600px;width:220px;padding:12px;border-radius:14px;background:#fff;box-shadow:0 18px 40px rgba(0,0,0,.35);font:700 18px Pret;text-align:center;opacity:0"><img src="../assets/slide1.png" style="width:196px;height:150px;object-fit:cover;border-radius:8px;display:block;margin-bottom:8px">new_photo.jpg</div>
+          <div class="modal" id="mtel"><div class="mbox">
+            <div class="tt">대표번호 일괄 수정</div>
+            <div class="lb">헤더 · 본문 · 푸터의 전화번호와 연결(tel:)이 한 번에 바뀝니다.</div>
+            <div class="in focus"><span id="mteltxt">1666.9412</span><span class="caret"></span></div>
+            <div class="acts"><div class="btn">취소</div><div class="btn ok" id="mtelok">확인</div></div>
+          </div></div>
+        </div>
+        <div class="ripple" id="edrip"></div>
+        <svg class="cursor" id="edcur" viewBox="0 0 24 24" style="width:58px;height:58px"><path d="M3 2 L3 19 L7.5 15 L10.5 22 L13.5 20.7 L10.6 14 L17 14 Z" fill="#111" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- C 그 밖에 -->
+<section id="c" class="scene">
+  <div class="ttl"><span class="mask" data-split>링크 · 슬라이드 · 매장 목록도</span><br><span class="mask"><b data-split>화면에서 바로.</b></span></div>
+  <div class="mc" id="mc1">
+    <div class="lbl">연결 링크</div>
+    <div class="btnmock">창업 상담 신청 →<div class="ed-href" id="href">🔗 링크 수정</div></div>
+    <div class="fld"><span id="lnk">#con19</span><span class="caret"></span></div>
+    <div class="ok" id="lnkok">✓ 전화 연결로 변경</div>
+  </div>
+  <div class="mc" id="mc2">
+    <div class="lbl">메인 슬라이드</div>
+    <div class="sl3" id="sa" style="left:40px"><img src="../assets/slide1.png"><span>살균 케어</span></div>
+    <div class="sl3" id="sb" style="left:192px"><img src="../assets/slide2.png"><span>문앞 배송</span></div>
+    <div class="sl3" id="sc" style="left:344px"><img src="../assets/photo2.png"><span>천연 세제</span><i class="new">NEW</i></div>
+    <div class="addbtn" id="sadd" style="left:40px;top:360px">＋ 슬라이드 추가</div>
+  </div>
+  <div class="mc" id="mc3">
+    <div class="lbl">매장 목록</div>
+    <div class="map2">
+      <svg width="470" height="150" style="position:absolute"><g stroke="#cfd8e6" stroke-width="9" fill="none"><path d="M-10 40 C150 70 300 10 480 60"/><path d="M90 -10 L130 160"/><path d="M-10 120 C160 100 320 140 480 110"/></g></svg>
+      <svg class="pin" style="left:110px;top:80px"><path d="M22 56 C22 56 4 34 4 21 A18 18 0 0 1 40 21 C40 34 22 56 22 56Z" fill="#3674FF" stroke="#fff" stroke-width="3"/><circle cx="22" cy="21" r="7" fill="#fff"/></svg>
+      <svg class="pin" style="left:250px;top:60px"><path d="M22 56 C22 56 4 34 4 21 A18 18 0 0 1 40 21 C40 34 22 56 22 56Z" fill="#3674FF" stroke="#fff" stroke-width="3"/><circle cx="22" cy="21" r="7" fill="#fff"/></svg>
+      <svg class="pin" id="npin" style="left:370px;top:110px"><path d="M22 56 C22 56 4 34 4 21 A18 18 0 0 1 40 21 C40 34 22 56 22 56Z" fill="#ff7a1a" stroke="#fff" stroke-width="3"/><circle cx="22" cy="21" r="7" fill="#fff"/></svg>
+    </div>
+    <div class="st" style="top:300px">딩딩파파 서울본점</div>
+    <div class="st" style="top:372px">딩딩파파 수원점</div>
+    <div class="st new" id="nst" style="top:444px">딩딩파파 대전점<i>추가됨</i></div>
+  </div>
+</section>
+
+<!-- D 저장 -->
+<section id="d" class="scene">
+  <div class="gridbg"></div>
+  <div class="ring" id="ring1"></div><div class="ring" id="ring2"></div>
+  <div class="bigsave" id="bigsave"><span class="s1">저장 (6)</span><span class="s2" style="background:#9aa3b5">저장 중…</span><span class="s3" style="background:#16a34a">✓ 저장 완료</span></div>
+  <div class="done"><span class="mask" data-split>클릭 한 번이면, </span><span class="mask"><b data-split>사이트에 바로 반영.</b></span></div>
+  <div class="ripple" id="rd"></div>
+  <svg class="cursor" id="curd" viewBox="0 0 24 24" style="width:64px;height:64px"><path d="M3 2 L3 19 L7.5 15 L10.5 22 L13.5 20.7 L10.6 14 L17 14 Z" fill="#fff" stroke="#111" stroke-width="1.4" stroke-linejoin="round"/></svg>
+</section>
+
+<!-- E 아웃트로 -->
+<section id="e" class="scene">
+  <div class="lk"><svg class="logo" viewBox="0 0 380 82"><g class="vb"><path fill="currentColor" d="M-1.55 0 L29.41 52.26 A1.97 1.97 0 0 0 30.07 52.94 A15.37 15.37 0 0 0 48.62 51.1 A4.8 4.8 0 0 0 49.48 45.14 L22.75 0 Z"/></g><g class="vl"><path style="fill:var(--logo-blue,#3235CD)" d="M35.43 59.76 Q34.93 58.9 35.85 59.32 A15.16 15.16 0 0 0 54.59 53.17 L84 4.7 A9.8 9.8 0 0 1 100.8 14.9 L62.94 77.24 A10.1 10.1 0 0 1 45.58 77.1 Z"/></g><g fill="currentColor" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path class="ch" d="M121.4 3 L142.4 78 L167.5 42.1 L192.6 78 L213.6 3 L200.6 3 L187.6 49.4 L167.5 20.7 L147.4 49.4 L134.4 3 Z"/><path class="ch" d="M294 3 H238 A17 17 0 0 0 221 20 V60 A17 17 0 0 0 238 77 H294 V64 H237 A4 4 0 0 1 233 60 V43 H281 V30 H233 V19 A4 4 0 0 1 237 15.5 H294 Z"/><path class="ch" d="M306 3 H352 A19.5 19.5 0 0 1 368.5 32.8 A24 24 0 0 1 355.5 77 H306 Z M318 15.5 H352 A7 7 0 0 1 352 29.5 H318 Z M318 42.5 H355.5 A10.75 10.75 0 0 1 355.5 64 H318 Z" fill-rule="evenodd"/></g></svg></div>
+  <div class="cp"><span class="mask" data-split>고객이 직접 고치는 홈페이지,</span><br><span class="mask"><b data-split>브이웹</b></span><span class="mask" data-split>이 만듭니다.</span></div>
+  <div class="ct"><div class="d">브이웹.com</div><div class="p"><small>상담문의</small>1666-5812</div></div>
+</section>
+
+<div id="progress"></div>
+<div id="wipe"><div class="wa"></div><div class="wb"></div></div>
+</div>
+<script src="../scripts/gsap.min.js"></script>
+<script src="lib.js"></script>
+<script src="short.js"></script>
+</body>
+</html>

@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "render": "node scripts/render.mjs video 30 8",
-    "snap": "node scripts/render.mjs snap"
+    "snap": "node scripts/render.mjs snap",
+    "render:short": "node scripts/render.mjs video 30 8 --short",
+    "snap:short": "node scripts/render.mjs snap --short"
   },
   "dependencies": {
     "@fontsource/montserrat": "^5.3.0",

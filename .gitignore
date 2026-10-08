@@ -1,6 +1,7 @@
 node_modules/
 out/*
 !out/vweb_motion.mp4
+!out/vweb_motion_30s.mp4
 assets/raw/
 assets/ding_full.jpg
 ref/

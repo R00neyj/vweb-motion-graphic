@@ -1,4 +1,4 @@
-// 사용법: node render.mjs snap 1.5 12 40  |  node render.mjs video [fps] [workers]
+// 사용법: node render.mjs snap 1.5 12 40  |  node render.mjs video [fps] [workers]  (--short 붙이면 30초 편집본)
 import { launch } from './browser.mjs';
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
@@ -15,8 +15,9 @@ const server = http.createServer((req, res) => {
   fs.createReadStream(f).pipe(res);
 });
 await new Promise(r => server.listen(0, '127.0.0.1', r));
-const PAGE = `http://127.0.0.1:${server.address().port}/video/index.html`;
-const [mode = 'snap', ...rest] = process.argv.slice(2);
+const SHORT = process.argv.includes('--short');
+const PAGE = `http://127.0.0.1:${server.address().port}/video/${SHORT ? 'short' : 'index'}.html`;
+const [mode = 'snap', ...rest] = process.argv.slice(2).filter(a => a !== '--short');
 
 async function openPage(browser) {
   const p = await browser.newPage({ viewport: { width: 1920, height: 1080 } });
@@ -32,7 +33,7 @@ async function openPage(browser) {
 }
 
 if (mode === 'snap') {
-  const out = path.join(ROOT, 'out', 'snaps');
+  const out = path.join(ROOT, 'out', SHORT ? 'snaps_short' : 'snaps');
   fs.mkdirSync(out, { recursive: true });
   const b = await launch();
   const p = await openPage(b);
@@ -69,7 +70,7 @@ if (mode === 'snap') {
     await p.close();
   }));
   await b.close();
-  const mp4 = path.join(ROOT, 'out', 'vweb_motion.mp4');
+  const mp4 = path.join(ROOT, 'out', SHORT ? 'vweb_motion_30s.mp4' : 'vweb_motion.mp4');
   await new Promise((res, rej) => {
     const ff = spawn('ffmpeg', ['-y', '-loglevel', 'error', '-framerate', String(fps), '-i', path.join(frameDir, 'f%05d.jpg'),
       '-c:v', 'libx264', '-preset', 'slow', '-crf', '16', '-pix_fmt', 'yuv420p', '-movflags', '+faststart', mp4], { stdio: 'inherit' });
